@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'> 
+      <title>JJmeasure_temperature</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel='stylesheet' type='text/css' media='screen' href='main.css'>  
+      <script src="jj.js"></script>
+      
+    <link rel="stylesheet" href="css/element.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    </head>     
+    
+    <body style="width: 100%; background-color: gray;">
+      <header>
+        <div class="nav">
+          <ul>
+            <li class="home"><a href="index.html"><div style="padding-left: 30px;"><img src="css/picpic/3844470-home-house_110332.png" style="width: 40px; height: 40px;"></div></a></li>
+            <li class="tutorials"><a href="#">หน่วยวัด</a>
+            <ul>
+              <li><a href="weight.html">น้ำหนัก </a></li>
+              <li><a href="length.html">ความยาว</a></li>
+              <li><a href="capacity.html">ความจุ Computer</a></li>
+              <li><a href="temperature.html">อุณหภูมิ  </a></li>
+              <li><a href="measuring.html">หน่วยตวง </a></li>
+            </ul>
+          </li>
+          <li class="news"><a href="#">Contact</a>
+            <ul>
+              <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fline.me%2Fti%2Fp%2FfM2Np7Zsqr%3Ffbclid%3DIwAR2C0NL2l8wPFWMd2tHTTOX9LOPD5nkN5RGSUSaSTsRSHxOV4NCyf2SAeNw&h=AT17hehPtpeKMgUQMD5XQCjBEXMiccOW7Wfk-_tahFqbH3-MUARRBWeOnz0W_MywU1N3iZar0wEP7dFLoMo_qQ6G6hJGDEpWwomvPceGa2js55NSFw8G1WhxN4n22HxNMxkb5A">Admin 1</a></li>
+              <li><a href="https://instagram.com/zkdyl6?igshid=ZDc4ODBmNjlmNQ=="></a></li>
+            </ul>
+            </li>
+          </ul></div>
+        </div>
+      </header>
+      <div style="background-color: #000000; padding: 1px;"></div>
+      <div style="background-color: #a0abb1; padding: 10px;">
+        <div style="padding-left:30%;">
+        <div style="display:flex;">
+        <center><div style="display:flex;"><img src="css/picpic/logo.png" style="width: 180px; height: 100;"><div style="padding-left: 20px;" ><logo style="color: #e96209; font-size: 3vw; text-shadow: 4px 6px 10px #0f0f0f44">JJmeasure</logo></div></center></div>
+        </div>
+      </div>
+      <div style="background-color: #000000; padding: 1px;"></div>
+      <center>
+      <div style="padding-top: 3%;"></div>
+        <div style="background-color: rgb(111, 107, 104); width: 80%; height:80%;">
+        </br>
+        
+        <h3 style="color: aliceblue; font-size: 35px; "><div style=" text-shadow: 4px 6px 12px #11094d; padding:10px;" >คำนวณหน่วยวัดอุณหภูมิ</div></h3>
+        <div class="btn-5"></div>
+        <span style="color: #fff; font-size: 35px; text-shadow: 4px 6px 10px #11094d;">Input Number : </span> 
+        <input type="text" id="w2" style="width: 15%; height: 30px; font-size:25px">
+        <div style="padding-left: 40%;">
+        <div style="display: flex;"><center>
+        <select id="ow1" style=" font-size:25px">
+          <option value="°C">เซลเซียส(°C)</option> 
+          <option value="°F">ฟาเรนไฮต์(°F)</option> 
+          <option value="°N">นิวตัน(°N)</option>
+          <option value="°De">เดลิเซิล(°De)</option>
+          <option value="°K">เคลวิน(°K)</option>
+          <option value="°R">แรงคิน(°R)</option>
+          <option value="°Ré">โรเมอร์(°Ré)</option>  
+        </select>
+        <select id="ow2" style=" font-size:25px">
+          <option value="°C">เซลเซียส(°C)</option> 
+          <option value="°F">ฟาเรนไฮต์(°F)</option> 
+          <option value="°N">นิวตัน(°N)</option>
+          <option value="°De">เดลิเซิล(°De)</option>
+          <option value="°K">เคลวิน(°K)</option>
+          <option value="°R">แรงคิน(°R)</option>
+          <option value="°Ré">โรเมอร์(°Ré)</option>
+        </select>  
+        <button style=" font-size: 40px;" class="btn-1" onclick="temp();">submit</button>  
+      </div></center> </div> 
+        <br><center><p id="w1" style="color:#ffffff; font-size: 40px; width: 80%; height: 45px;  text-shadow: 4px 6px 10px #11094d;"></p></center></br>
+        </center>
+      <footer>
+      <div style="height: 50px;"></div>  
+      <div style="background-color: #000000; padding: 1px;"></div>
+      <div style="background-color: #444; padding: 20px; height:60px;"></div>
+    </footer>
+    </body>
+    </html>
+<!--<input type="text" id="w2" style="width: 20%; height: 35px; font-size:25px"/> 
+<select id="ow1" style=" font-size:25px">
+    <option value="°C">เซลเซียส(°C)</option> 
+    <option value="°F">ฟาเรนไฮต์(°F)</option> 
+    <option value="°N">นิวตัน(°N)</option>
+    <option value="°De">เดลิเซิล(°De)</option>
+    <option value="°K">เคลวิน(°K)</option>
+    <option value="°R">แรงคิน(°R)</option>
+    <option value="°Ré">โรเมอร์(°Ré)</option>
+</select>
+<select id="ow2" style=" font-size:25px">
+  <option value="°C">เซลเซียส(°C)</option> 
+  <option value="°F">ฟาเรนไฮต์(°F)</option> 
+  <option value="°N">นิวตัน(°N)</option>
+  <option value="°De">เดลิเซิล(°De)</option>
+  <option value="°K">เคลวิน(°K)</option>
+  <option value="°R">แรงคิน(°R)</option>
+  <option value="°Ré">โรเมอร์(°Ré)</option>
+</select>    
+<button style="color:#ffffff font-size 40px" class="btn-1" onclick="temp();">submit</button>
+<br><p id="w1"style="color:#f5af81; font-size: 40px; width: 80%; height: 45px;  text-shadow: 4px 6px 10px #11094d;"></p></br>
+</div>-->

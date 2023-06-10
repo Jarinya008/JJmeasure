@@ -1,0 +1,15 @@
+{
+  "name": "pidterm",
+  "version": "1.0.0",
+  "main": "jj.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2",
+    "prompt-sync": "^4.2.0"
+  }
+}
